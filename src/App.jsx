@@ -1,7 +1,7 @@
 import {
 	Route,
 	RouterProvider,
-	createBrowserRouter,
+	createHashRouter,
 	createRoutesFromElements
 } from 'react-router-dom';
 import RootLayout from './layout/RootLayout';
@@ -12,7 +12,7 @@ import Contact from './pages/Contact';
 import './assets/styles/main.scss';
 
 function App() {
-	const router = createBrowserRouter(
+	const router = createHashRouter(
 		createRoutesFromElements(
 			<Route path='/' element={<RootLayout />}>
 				<Route index element={<Home />} />
