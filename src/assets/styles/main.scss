@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$neutral--100: #ffffff;
+$neutral--200: #000000;
+$primary--100: #7f7f7f;
+$primary--200: #e8e5e480;
+
+.nav {
+	background-color: $primary--200;
+
+	&__items {
+		padding: 0.5rem 1rem;
+	}
+
+	&__active {
+		background-color: $neutral--100;
+		border-radius: 9999px;
+	}
+}
+
+.outroHeading {
+	color: $primary--100;
+	transition: all 350ms ease-in-out;
+
+	&:hover {
+		color: $primary--200;
+	}
+}
+
+.grayscale {
+	filter: invert(5%) sepia(13%) saturate(411%) hue-rotate(314deg)
+		brightness(93%) contrast(87%);
+}
